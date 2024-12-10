@@ -1,0 +1,309 @@
+/* Reset básico e fonte padrão */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff, #54aebe);
+  }
+
+
+
+/* Barra de Pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    
+}
+
+#search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #007bff;
+}
+
+/* Produtos */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-info {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Botão de Adicionar */
+.adicionar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.adicionar:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* Configuração geral */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff, #54aebe);
+  }
+  
+  /* Títulos e fontes */
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-bold2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+  }
+  
+  /* Navbar */
+  .menu {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+    align-items: center; /* Garante que os itens fiquem alinhados verticalmente */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15pt;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Transição suave para cor e tamanho */
+  }
+  
+  .logo {
+    padding-left: 10px;
+  }
+  
+  .menu a:hover {
+    color: rgb(36, 26, 26); /* Cor do link no hover */
+    font-size: 20pt; /* Tamanho da fonte no hover */
+    font-weight: bold; /* Garante que o peso da fonte aumente */
+    transition: color 0.3s ease, font-size 0.3s ease; /* A transição vai ser suave */
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Isso garante que o logo fique à esquerda e o menu à direita */
+    padding: 20px;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Texto principal */
+  .col-2 h1 {
+    font-size: 50px; /* Tamanho do título */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaço entre o título e o subtítulo */
+  }
+  
+  .col-2 h3 {
+    font-size: 18px; /* Tamanho do subtítulo */
+    margin-top: 10px; /* Espaço acima do subtítulo */
+    color: #333; /* Cor opcional para melhor contraste */
+  }
+  
+  /* Botão de "Veja Nossos Produtos" */
+  .btn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background 0.3s ease;
+    margin-top: 20px; /* Move o botão levemente para baixo */
+  }
+  
+  .btn:hover {
+    background: rgb(24, 108, 235);
+  }
+  
+  /* Imagem principal */
+  .col-2 img {
+    max-width: 100%; /* Ajuste do tamanho da imagem principal */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px 0;
+    /* PARA AJUSTAR O TAMANHO DA IMAGEM: altere o valor de max-width acima */
+  }
+  
+  /* Geral: Estilo do quadrado */
+  .quadrado {
+    width: 250px;
+    min-height: 200px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    background-color: #000000; 
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  .quadrado2 {
+    width: 600px;
+    min-height: 200px;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    background-color: #000000; 
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  
+  
+  
+  
+  .quadrado:hover {
+    transform: scale(1.05);
+  }
+  
+  .quadrado2:hover {
+    transform: scale(1.05);
+  }
+  
+  #quadrado-preto {
+    width: 100%;
+    min-height: 300px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  
+
+  
+  
+  
+  /* Layout geral */
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-bottom: 50px; /* Reduzido de 250px para 50px */
+  }
+  
+  header {
+    margin-top: 100px; /* Reduzido de 700px para 50px */
+    padding-bottom: 500px; /* Reduzido de 500px para 50px */
+    background-color: rgb(0, 0, 0);
+    height: 450px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    }
+    
+    .social-media a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid transparent;
+      text-decoration: none;
+      transform: rotate(45deg);
+      transition: .5s;
+      }
+  
+      .social-media a:hover {
+      border-color: rgb(0, 174, 255);
+      }
+      
+    .social-media a i {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+    }

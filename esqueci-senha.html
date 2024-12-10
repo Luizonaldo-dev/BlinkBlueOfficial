@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="login.css">
+
+  <title>Esqueceu a Senha - Recuperação</title>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" alt="Logo" width="200px" height="120px">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="index.html #contatos" class="smooth-scroll">Sobre Nós</a></li>
+                <li><a href="login.html">Conta</a></li>
+            
+            <div class="social-media">
+                <a href="#sobre-nos" class="smooth-scroll"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010491551246&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/blinkbluerj?igsh=MTc3YmNoNTZ1ZDdkNg=="><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+  </div>
+
+  <!-- Formulário de recuperação de senha -->
+  <form action="" class="login__form">
+    <h1 class="login__title">Recuperação de Senha</h1>
+
+    <div class="login__content">
+      <div class="login__box">
+        <i class="ri-mail-line login__icon"></i>
+
+        <div class="login__box-input">
+          <input type="email" required class="login__input" id="recover-email" placeholder=" ">
+          <label for="recover-email" class="login__label">Digite seu e-mail</label>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="login__button">Enviar link de recuperação</button>
+
+    <p class="login__register">
+      Lembrou a senha? <a href="login.html">Faça login</a>
+    </p>
+  </form>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="login.js"></script>
+</body>
+</html>

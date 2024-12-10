@@ -1,0 +1,205 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/*=============== ROOT VARIABLES ===============*/
+:root {
+  --primary-color: #4A90E2;
+  --secondary-color: #333;
+  --background-color: #f7f9fc;
+  --text-color: #555;
+  --button-color: #007BFF;
+  --button-hover-color: #0056b3;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+  --text-overlay-color: #fff;
+  --border-radius: 10px;
+  --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(#fff, #54aebe);
+  margin-top: 150px; /* Espaço para o header fixo */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+/*=============== HEADER STYLES ===============*/
+.header {
+  width: 100%;
+  position: fixed; /* Torna o header fixo no topo */
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1000; /* Garante que o header fique acima dos outros elementos */
+   /* Sombra para destacar */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 15pt;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(36, 26, 26);
+  font-size: 20pt;
+  font-weight: bold;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/*=============== PRODUCT STYLES ===============*/
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  flex: 1 1 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover .image {
+  transform: scale(1.1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color);
+  color: var(--text-overlay-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  padding: 1rem;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: var(--border-radius);
+}
+
+.product-image:hover .image-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.product-info {
+  flex: 1 1 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.buy-button {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.back-button {
+    display: inline-flex; /* Permite alinhar o ícone e o texto */
+    align-items: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #004da8; /* Fundo */
+    border: 1px solid transparent; /* Borda invisível */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: auto; /* Alinha no lado esquerdo */
+    
+  }
+  
+  .back-button:hover {
+    background-color: #00347a; /* Fundo mais escuro no hover */
+    color: #d6e6ff; /* Muda a cor do texto */
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink Blue</title>
+    <link rel="stylesheet" href="inicial.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo-removebg-preview.png" alt="Logo" width="200px" height="120px">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#contatos" class="smooth-scroll">Sobre Nós</a></li>
+                    <li><a href="login.html">Conta</a></li>
+                
+                <div class="social-media">
+                    <a href="#sobre-nos" class="smooth-scroll"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100010491551246&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/blinkbluerj?igsh=MTc3YmNoNTZ1ZDdkNg=="><i class='bx bxl-instagram-alt'></i></a>
+                    
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <h1>Construir é Realizar Sonhos!</h1>
+            <p>Construa seus sonhos tijolo por tijolo com qualidade e confiança na Blink Blue.</p>
+            <a href="produtos.html" class="btn">Veja Nossos Produtos</a>
+        </div>
+        <div class="col-2">
+            <img src="ac3-removebg-preview.png" width="700" height="500" alt="Imagem">
+        </div>
+    </div>
+
+    <header>
+        <div id="quadrado-preto">
+            <div class="quadrado">
+                <h2 id="contatos">Contatos</h2>
+                <p>Entre em contato conosco:</p>
+                <p><strong>Telefone:</strong> (21) 99297-6100</p>
+                <br>
+                <h2>E-mail</h2>
+                <p>blinkblue.1447@gmail.com</p>
+                <br>
+                <h2>Telefone Fixo</h2>
+                <p>2671-0178<br>2671-4101</p>
+            </div>
+            <div class="quadrado2">
+                <h2 id="sobre-nos">Sobre nós</h2>
+                <p>
+                    A empresa Blink Blue Materiais de Construção Ltda foi fundada em 31/05/1993 e está cadastrada no segmento de materiais para construção, sob o CNPJ 39.451.307/0001-44. 
+                    Localizada na Avenida Brigadeiro Lima e Silva, N° 1447 - loja, no bairro 25 de Agosto em Duque de Caxias - RJ, CEP 25085-131.
+                
+                
+                    A empresa está registrada com o CNAE 4744-0/99, com atividade principal de comércio varejista de materiais de construção em geral.
+                </p>
+            </div>
+          
+    </header>
+
+    <script>
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach((anchor) => {
+            anchor.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = anchor.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blink Blue - Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo-removebg-preview.png" width="200px" height="120">
+            </div>
+            <nav>
+                <ul>
+                    <div class="poppins-bold2">
+                        <div class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="#sobre-nos" class="smooth-scroll">Sobre Nós</a></li>
+                            <li><a href="#contatos" class="smooth-scroll">Contato</a></li>
+                            <li><a href="pagamento.html">Carrinho</a></li>
+                        </div> 
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pagamento-container">
+        <h1>Informações de Pagamento</h1>
+
+        <!-- Lista de produtos no carrinho -->
+        <div id="carrinho-itens">
+            <!-- Os produtos do carrinho serão inseridos aqui dinamicamente -->
+        </div>
+
+        <div>
+            <h3>Total: <span id="total-preco">R$ 0,00</span></h3>
+        </div>
+
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+            <div class="form-group">
+                <label for="cartao">Número do Cartão de Crédito:</label>
+                <input type="text" id="cartao" name="cartao" required>
+            </div>
+            <div class="form-group">
+                <label for="vencimento">Data de Vencimento:</label>
+                <input type="text" id="vencimento" name="vencimento" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <button type="button" id="concluir-compra">Concluir Compra</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Blink Blue. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="pagamento.js"></script>
+</body>
+</html>
